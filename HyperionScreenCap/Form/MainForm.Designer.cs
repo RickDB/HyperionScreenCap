@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace HyperionScreenCap
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -18,7 +18,7 @@ namespace HyperionScreenCap
         {
             if (disposing && (components != null))
             {
-                TrayIcon.Dispose();
+                _trayIcon.Dispose();
                 components.Dispose();
             }
             base.Dispose(disposing);

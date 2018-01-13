@@ -2,10 +2,10 @@
 
 Windows screen capture program for the [Hyperion](https://github.com/tvdzwan/hyperion) open-source Ambilight project.
 
-The program uses Direct3D9 to capture the screen, resize it and send it to the ProtoBuffer interface of Hyperion.
+The program uses DirectX 9/11 to capture the screen, resize it and send it to the ProtoBuffer interface of Hyperion.
 
 ## Download
-[SetupHyperionScreenCap.exe](https://github.com/hanselb/HyperionScreenCap/releases/download/v1.4/SetupHyperionScreenCap.exe)
+[SetupHyperionScreenCap.exe](https://github.com/sabaatworld/HyperionScreenCap/releases)
 
 ## Dependencies
 
@@ -17,30 +17,21 @@ The program uses Direct3D9 to capture the screen, resize it and send it to the P
 
 [Microsoft Visual C++ 2008 Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=26368)
 
-
 ## Configuration
 
-Comes with setup form which is accessible via system tray, however manual config edit is also possible and below is an example HyperionScreenCap.exe.config :
+The application can be configured using the setup window which can be accessed by right clicking on the system tray icon. The defaults for most of the settings should work out of the box. Description of the configuration parameters can be found on the help tab of the setup window.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <appSettings>
-    <add key="hyperionServerIP" value="10.1.2.10"/>
-    <add key="hyperionServerPort" value="19445"/>
-    <add key="hyperionMessagePriority" value="10"/> <!-- Lower number means higher priority -->
-    <add key="hyperionMessageDuration" value="1000"/> <!-- How long will each captured screenshot stay on LEDs -->
-    <add key="width"  value="64"/> <!-- Keep these values small -->
-    <add key="height" value="64"/> <!-- Keep these values small -->
-    <add key="captureInterval" value="60"/>
-    <add key="notificationLevel" value="None"/>
-    <add key="monitorIndex" value="0"/> <!-- 0 is the main monitor -->
-    <add key="apiEnabled" value="False" />
-    <add key="apiExcludedTimesEnabled" value="False" />
-    <add key="apiExcludeTimeStart" value="23-7-2017 08:00:00" />
-    <add key="apiExcludeTimeEnd" value="23-7-2017 20:00:00" />
-    <add key="captureOnStartup" value="False" />
-  </appSettings>
-<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0,Profile=Client"/></startup>
-</configuration>
-```
+## Setup Window
+
+### Manage screen capture configurations and other application level settings.
+
+![Setup Window General Tab](Screenshots/setup-general.JPG)
+
+
+### Select between DirectX11 & DirectX9 capture methods and define one or more Hyperion server destinations.
+
+![Setup Window Edit Capture Configuration](Screenshots/setup-edit-capture-configuration.JPG)
+
+### Use the help tab to understand how to configure screen captures.
+
+![Setup Window Help Tab](Screenshots/setup-help.JPG)

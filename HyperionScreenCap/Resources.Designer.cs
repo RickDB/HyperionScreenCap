@@ -63,9 +63,9 @@ namespace HyperionScreenCap {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon ConfigFile {
+        internal static System.Drawing.Icon cross {
             get {
-                object obj = ResourceManager.GetObject("ConfigFile", resourceCulture);
+                object obj = ResourceManager.GetObject("cross", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -73,9 +73,39 @@ namespace HyperionScreenCap {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon cross {
+        internal static System.Drawing.Icon disable_capture {
             get {
-                object obj = ResourceManager.GetObject("cross", resourceCulture);
+                object obj = ResourceManager.GetObject("disable_capture", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap don_btc {
+            get {
+                object obj = ResourceManager.GetObject("don_btc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap don_eth {
+            get {
+                object obj = ResourceManager.GetObject("don_eth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon enable_capture {
+            get {
+                object obj = ResourceManager.GetObject("enable_capture", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -111,22 +141,35 @@ namespace HyperionScreenCap {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;log4net&gt;
+        ///  &lt;appender name=&quot;ConsoleAppender&quot; type=&quot;log4net.Appender.ConsoleAppender&quot; &gt;
+        ///    &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
+        ///      &lt;conversionPattern value=&quot;%d{yyyy-MM-dd HH:mm:ss} [%p] [%t] %c.%M:%L - %m%n&quot; /&gt;
+        ///    &lt;/layout&gt;
+        ///  &lt;/appender&gt;
+        ///  &lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
+        ///    &lt;file type=&quot;log4net.Util.PatternString&quot; value=&quot;%property{logFilePath}&quot; /&gt;
+        ///    &lt;appendToFile value=&quot;true&quot; /&gt;
+        ///    &lt;rollingStyl [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static System.Drawing.Icon television__arrow {
+        internal static string LogConfiguration {
             get {
-                object obj = ResourceManager.GetObject("television__arrow", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                return ResourceManager.GetString("LogConfiguration", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized string similar to ==DirectX 11 Configuration Options==
+        ///
+        ///Maximum FPS: The maxium number of updates per second that should be sent to Hyperion. Setting it to a value higher than your monitor refresh rate will unnecessarily waste resources.
+        ///Suppose you set this to 60 (equal to your monitor refresh rate), then frames should be sent at a minimum interval of 1000/60 ~ 16ms. Using this value, the application evaluates if it needs to wait before sending the next frame.
+        ///
+        ///Frame Capture Timeout: Millis after which desktop capture  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static System.Drawing.Icon television__pencil {
+        internal static string SetupFormHelp {
             get {
-                object obj = ResourceManager.GetObject("television__pencil", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                return ResourceManager.GetString("SetupFormHelp", resourceCulture);
             }
         }
     }
